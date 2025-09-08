@@ -53,7 +53,7 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/conanmalanaphy/portfolio.git
    cd portfolio
    ```
 
@@ -114,6 +114,7 @@ This project is open source and available under the [MIT License](LICENSE).
 **Conan Malanaphy**
 - Portfolio: [https://portfolio-beta-jade-25.vercel.app](https://portfolio-beta-jade-25.vercel.app)
 - GitHub: [@conanmalanaphy](https://github.com/conanmalanaphy)
+- Repository: [https://github.com/conanmalanaphy/portfolio](https://github.com/conanmalanaphy/portfolio)
 
 ---
 
