@@ -78,8 +78,8 @@ export default function AboutPage() {
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             I am a Front-end Developer with 8+ years experience developing award-winning software. 
-            My main focus is building applications in React and Next.js. When I'm not coding, 
-            I'm exploring London on my bike, finding inspiration in the city's rhythm and flow.
+            My main focus is building applications in React and Next.js. When I&apos;m not coding, 
+            I&apos;m exploring London on my bike, finding inspiration in the city&apos;s rhythm and flow.
           </p>
         </motion.div>
 
@@ -195,8 +195,8 @@ export default function AboutPage() {
             >
               <h3 className="text-xl font-bold mb-3 text-green-600 dark:text-green-400">🚴‍♂️ Cycling</h3>
               <p className="text-slate-600 dark:text-slate-300">
-                I love exploring London's streets on my bike. Cycling gives me a fresh perspective on the city 
-                and helps me think through complex problems. There's something about the rhythm of pedaling 
+                I love exploring London&apos;s streets on my bike. Cycling gives me a fresh perspective on the city 
+                and helps me think through complex problems. There&apos;s something about the rhythm of pedaling 
                 that clears my mind and sparks new ideas.
               </p>
             </motion.div>
@@ -208,8 +208,8 @@ export default function AboutPage() {
             >
               <h3 className="text-xl font-bold mb-3 text-blue-600 dark:text-blue-400">💡 Continuous Learning</h3>
               <p className="text-slate-600 dark:text-slate-300">
-                I'm passionate about staying current with web technologies and best practices. 
-                Whether it's mastering a new framework or exploring innovative design patterns, 
+                I&apos;m passionate about staying current with web technologies and best practices. 
+                Whether it&apos;s mastering a new framework or exploring innovative design patterns, 
                 I believe in the power of continuous learning to build better solutions.
               </p>
             </motion.div>
@@ -223,7 +223,7 @@ export default function AboutPage() {
           transition={{ duration: 0.8, delay: 1.0 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold mb-8">Let's Connect</h2>
+          <h2 className="text-3xl font-bold mb-8">Let&apos;s Connect</h2>
           <div className="flex items-center justify-center space-x-6">
             <motion.a
               href="https://github.com/conanmalanaphy/"

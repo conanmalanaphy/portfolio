@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
-import { BackgroundPattern } from '../components';
 import ParkBackground from '../components/park-background';
 import CyclingAnimation from '../components/cycling-animation';
 
@@ -109,7 +108,7 @@ export default function HomePage() {
               className="text-lg text-slate-700 dark:text-slate-200 max-w-2xl mx-auto leading-relaxed mb-12"
             >
               I build exceptional digital experiences with modern web technologies. 
-              When I'm not coding, you'll find me cycling through London's streets, 
+              When I&apos;m not coding, you&apos;ll find me cycling through London&apos;s streets, 
               always pedaling towards the next challenge.
             </motion.p>
 
