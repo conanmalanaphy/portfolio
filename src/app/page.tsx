@@ -17,8 +17,11 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Conan Malanaphy",
+    "alternateName": ["Malanaphy", "Conan", "Malanaphy Conan"],
+    "givenName": "Conan",
+    "familyName": "Malanaphy",
     "jobTitle": "Senior Front-end Developer",
-    "description": "Senior Front-end Developer with 8+ years experience building award-winning software. Expert in React, Next.js, TypeScript, and modern web development.",
+    "description": "Conan Malanaphy (Malanaphy) is a Senior Front-end Developer with 8+ years experience building award-winning software. Expert in React, Next.js, TypeScript, and modern web development. Based in London, UK.",
     "url": "https://malanaphy.co.uk",
     "image": "https://malanaphy.co.uk/icon.png",
     "sameAs": [
@@ -42,7 +45,14 @@ export default function HomePage() {
       "Front-end Development",
       "Web Development",
       "User Experience",
-      "Web Accessibility"
+      "Web Accessibility",
+      "React Developer",
+      "Next.js Developer",
+      "JavaScript Developer",
+      "Web Developer London",
+      "Frontend Engineer",
+      "UI Developer",
+      "Software Engineer"
     ],
     "worksFor": {
       "@type": "Organization",
@@ -51,6 +61,15 @@ export default function HomePage() {
     "alumniOf": {
       "@type": "Organization",
       "name": "Loughborough University"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Senior Front-end Developer",
+      "occupationLocation": {
+        "@type": "City",
+        "name": "London"
+      },
+      "skills": ["React", "Next.js", "TypeScript", "JavaScript", "Front-end Development"]
     }
   };
 
