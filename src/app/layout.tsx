@@ -49,20 +49,20 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://conanmalanaphy.dev'),
+  metadataBase: new URL('https://malanaphy.co.uk'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://conanmalanaphy.dev',
+    url: 'https://malanaphy.co.uk',
     title: 'Conan Malanaphy - Senior Front-end Developer | React & Next.js Expert',
     description: 'Senior Front-end Developer with 8+ years experience building award-winning software. Expert in React, Next.js, TypeScript, and modern web development.',
     siteName: 'Conan Malanaphy Portfolio',
     images: [
       {
-        url: '/icon.png',
+        url: 'https://malanaphy.co.uk/icon.png',
         width: 1200,
         height: 630,
         alt: 'Conan Malanaphy - Senior Front-end Developer',
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Conan Malanaphy - Senior Front-end Developer | React & Next.js Expert',
     description: 'Senior Front-end Developer with 8+ years experience building award-winning software. Expert in React, Next.js, TypeScript.',
-    images: ['/icon.png'],
+    images: ['https://malanaphy.co.uk/icon.png'],
     creator: '@conanmalanaphy',
   },
   robots: {

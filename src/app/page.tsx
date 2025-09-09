@@ -19,8 +19,8 @@ export default function HomePage() {
     "name": "Conan Malanaphy",
     "jobTitle": "Senior Front-end Developer",
     "description": "Senior Front-end Developer with 8+ years experience building award-winning software. Expert in React, Next.js, TypeScript, and modern web development.",
-    "url": "https://conanmalanaphy.dev",
-    "image": "https://conanmalanaphy.dev/icon.png",
+    "url": "https://malanaphy.co.uk",
+    "image": "https://malanaphy.co.uk/icon.png",
     "sameAs": [
       "https://github.com/conanmalanaphy/",
       "https://www.linkedin.com/in/conan-malanaphy-946260a7/"

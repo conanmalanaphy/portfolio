@@ -11,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://conanmalanaphy.dev/sitemap.xml',
+    sitemap: 'https://malanaphy.co.uk/sitemap.xml',
   }
 }

@@ -5,7 +5,7 @@ import { MetadataRoute } from 'next'
  * Helps search engines discover and index all pages
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://conanmalanaphy.dev'
+  const baseUrl = 'https://malanaphy.co.uk'
   
   return [
     {
