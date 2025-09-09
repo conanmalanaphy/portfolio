@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
 import ParkBackground from '../components/park-background';
 import CyclingAnimation from '../components/cycling-animation';
+import ThemeToggleWrapper from '../components/theme-toggle-wrapper';
 
 /**
  * HomePage Component
@@ -61,6 +62,9 @@ export default function HomePage() {
       />
       <main className="min-h-screen text-slate-900 dark:text-white relative overflow-hidden">
         <ParkBackground />
+        
+        {/* Theme Toggle */}
+        <ThemeToggleWrapper />
         
         {/* Main Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">

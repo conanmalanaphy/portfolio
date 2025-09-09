@@ -23,3 +23,7 @@ export { default as ScrollNavigation } from './scroll-navigation';
 // Animation components
 export { default as CyclingAnimation } from './cycling-animation';
 export { default as ParkBackground } from './park-background';
+
+// Theme components
+export { default as ThemeToggle } from './theme-toggle';
+export { default as ThemeToggleWrapper } from './theme-toggle-wrapper';
