@@ -96,7 +96,7 @@ const CyclingAnimation = () => {
 
   return (
     <motion.div
-      className="absolute bottom-8 z-20"
+      className="absolute bottom-0 z-20"
       style={{ 
         x: bikeX,
         opacity: isAnimating ? 1 : 0
@@ -105,7 +105,7 @@ const CyclingAnimation = () => {
       animate={{ opacity: isAnimating ? 1 : 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="relative pixelated-bike">
+      <div className="relative">
         {/* Custom Bike Animation GIF */}
         <img
           src="/bike-animation.gif"
@@ -136,20 +136,6 @@ const CyclingAnimation = () => {
            distance < 120 ? "APPROACHING..." : ""}
         </motion.div>
         
-        {/* Proximity ring effect - pixelated */}
-        <motion.div
-          className="absolute inset-0 rounded-full border-2 border-blue-400/40 pointer-events-none"
-          style={{
-            imageRendering: 'pixelated',
-            filter: 'contrast(1.3) saturate(1.2)',
-            boxShadow: '0 0 8px rgba(59, 130, 246, 0.4)'
-          }}
-          animate={{
-            scale: distance < 120 ? 1 + (120 - distance) / 120 : 1,
-            opacity: distance < 120 ? (120 - distance) / 120 : 0,
-          }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-        />
       </div>
     </motion.div>
   );

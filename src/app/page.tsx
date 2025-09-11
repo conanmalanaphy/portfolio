@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
 import ParkBackground from '../components/park-background';
 import CyclingAnimation from '../components/cycling-animation';
 import ThemeToggleWrapper from '../components/theme-toggle-wrapper';
+import TypingAnimation from '../components/typing-animation';
 
 /**
  * HomePage Component
@@ -96,7 +97,7 @@ export default function HomePage() {
               className="text-6xl md:text-8xl font-bold mb-8 tracking-tight"
             >
               <motion.span
-                className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-green-600 via-emerald-500 to-green-700 bg-clip-text text-transparent pixelated-text"
                 animate={{
                   backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
                 }}
@@ -106,10 +107,13 @@ export default function HomePage() {
                   ease: "linear"
                 }}
                 style={{
-                  backgroundSize: '200% 200%'
+                  backgroundSize: '200% 200%',
+                  imageRendering: 'pixelated',
+                  textShadow: '2px 2px 0px rgba(0,0,0,0.3)',
+                  fontFamily: 'monospace'
                 }}
               >
-                Conan Malanaphy
+                CONAN MALANAPHY
               </motion.span>
             </motion.h1>
             
@@ -120,7 +124,12 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-2xl md:text-3xl mb-8 text-slate-800 dark:text-slate-100 font-medium"
             >
-              Front-end Developer
+              <TypingAnimation 
+                texts={["Front-end Developer", "Pixel Pusher"]}
+                typingSpeed={100}
+                deletingSpeed={50}
+                pauseTime={2000}
+              />
             </motion.div>
             
             {/* Description */}
@@ -130,9 +139,8 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-slate-700 dark:text-slate-200 max-w-2xl mx-auto leading-relaxed mb-12"
             >
-              I build exceptional digital experiences with modern web technologies. 
-              When I&apos;m not coding, you&apos;ll find me cycling through London&apos;s streets, 
-              always pedaling towards the next challenge.
+              Front-end developer specializing in React and modern web technologies. 
+              Building user experiences that matter, one component at a time.
             </motion.p>
 
             {/* Social Links */}
@@ -172,31 +180,7 @@ export default function HomePage() {
               </motion.a>
             </motion.div>
 
-            {/* CTA Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              <motion.a
-                href="/about"
-                whileHover={{ 
-                  scale: 1.05, 
-                  y: -3,
-                  boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)"
-                }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-semibold text-lg rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300"
-              >
-                <span>Learn More</span>
-                <motion.div
-                  whileHover={{ x: 4 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </motion.div>
-              </motion.a>
-            </motion.div>
+          
           </div>
         </div>
 

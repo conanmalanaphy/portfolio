@@ -35,13 +35,13 @@ const ParkBackground = () => {
             delay: i * 0.3,
           }}
         >
-          {/* Tree trunk - pixelated */}
-          <div className="w-4 h-16 bg-amber-800 dark:bg-amber-900 mx-auto" style={{ imageRendering: 'pixelated' }} />
           {/* Tree foliage - stacked, blocky shapes for a more pixelated look */}
-          {/* Corrected positioning: foliage should be ABOVE the trunk */}
-          <div className="w-12 h-4 bg-green-600 dark:bg-green-700 mx-auto -mt-4" style={{ imageRendering: 'pixelated' }} />
-          <div className="w-10 h-4 bg-green-500 dark:bg-green-600 mx-auto -mt-1" style={{ imageRendering: 'pixelated' }} />
-          <div className="w-8 h-4 bg-green-600 dark:bg-green-700 mx-auto -mt-1" style={{ imageRendering: 'pixelated' }} />
+          {/* Foliage positioned at the top, getting smaller as it goes up */}
+          <div className="w-12 h-6 bg-green-600 dark:bg-green-700 mx-auto mb-0 relative z-10" style={{ imageRendering: 'pixelated' }} />
+          <div className="w-14 h-6 bg-green-500 dark:bg-green-600 mx-auto -mt-1 relative z-10" style={{ imageRendering: 'pixelated' }} />
+          <div className="w-16 h-6 bg-green-600 dark:bg-green-700 mx-auto -mt-1 relative z-10" style={{ imageRendering: 'pixelated' }} />
+          {/* Tree trunk - pixelated, positioned below foliage */}
+          <div className="w-4 h-16 bg-amber-800 dark:bg-amber-900 mx-auto -mt-1" style={{ imageRendering: 'pixelated' }} />
         </motion.div>
       ))}
       
@@ -64,13 +64,13 @@ const ParkBackground = () => {
             delay: i * 0.5,
           }}
         >
-          {/* Small tree trunk - pixelated */}
-          <div className="w-3 h-10 bg-amber-700 dark:bg-amber-800 mx-auto" style={{ imageRendering: 'pixelated' }} />
           {/* Small tree foliage - pixelated triangle (simple for distant) */}
-          <div className="w-8 h-8 bg-green-700 dark:bg-green-800 mx-auto -mt-5" style={{ 
+          <div className="w-10 h-10 bg-green-700 dark:bg-green-800 mx-auto mb-0 relative z-10" style={{ 
             imageRendering: 'pixelated',
             clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)'
           }} />
+          {/* Small tree trunk - pixelated, positioned below foliage */}
+          <div className="w-3 h-10 bg-amber-700 dark:bg-amber-800 mx-auto -mt-2" style={{ imageRendering: 'pixelated' }} />
         </motion.div>
       ))}
       

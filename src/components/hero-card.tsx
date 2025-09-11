@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
-import TypingText from './typing-text';
+import TypingAnimation from './typing-animation';
 import NavCard from './nav-card';
 import { Code, Palette, Camera } from 'lucide-react';
 
@@ -73,7 +73,12 @@ const HeroCard = () => {
             className="text-2xl md:text-3xl mb-8"
           >
             <span className="text-slate-700 dark:text-slate-200 font-medium">
-              <TypingText text="Front-end Developer" />
+              <TypingAnimation 
+                texts={["Front-end Developer", "Pixel Pusher"]}
+                typingSpeed={100}
+                deletingSpeed={50}
+                pauseTime={2000}
+              />
             </span>
           </motion.div>
           
