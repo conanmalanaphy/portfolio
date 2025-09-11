@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
@@ -36,7 +36,7 @@ const ScrollNavigation = ({ containerRef }: ScrollNavigationProps) => {
       container.addEventListener('scroll', handleScroll);
       return () => container.removeEventListener('scroll', handleScroll);
     }
-  }, []);
+  }, [containerRef]);
 
   // Track current card based on scroll position
   useEffect(() => {
@@ -56,7 +56,7 @@ const ScrollNavigation = ({ containerRef }: ScrollNavigationProps) => {
       container.addEventListener('scroll', handleScroll);
       return () => container.removeEventListener('scroll', handleScroll);
     }
-  }, [cards.length]);
+  }, [cards.length, containerRef]);
 
   // Navigate to specific card
   const navigateToCard = (index: number) => {

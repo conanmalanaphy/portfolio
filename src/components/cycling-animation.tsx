@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useEffect, useState, useRef } from 'react';
 
 /**
@@ -107,11 +108,11 @@ const CyclingAnimation = () => {
     >
       <div className="relative">
         {/* Custom Bike Animation GIF */}
-        <img
+        <Image
           src="/bike-animation.gif"
           alt="Cycling animation"
-          width="120"
-          height="80"
+          width={120}
+          height={80}
           className="drop-shadow-lg"
           style={{
             imageRendering: 'pixelated',

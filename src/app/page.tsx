@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import ParkBackground from '../components/park-background';
 import CyclingAnimation from '../components/cycling-animation';
 import ThemeToggleWrapper from '../components/theme-toggle-wrapper';

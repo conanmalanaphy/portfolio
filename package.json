@@ -9,11 +9,23 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "@tiptap/extension-image": "^3.4.2",
+    "@tiptap/extension-link": "^3.4.2",
+    "@tiptap/extension-placeholder": "^3.4.2",
+    "@tiptap/react": "^3.4.2",
+    "@tiptap/starter-kit": "^3.4.2",
+    "@vercel/blob": "^1.1.1",
+    "@vercel/functions": "^3.1.0",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.542.0",
+    "mongodb": "^6.19.0",
+    "mongoose": "^8.18.1",
     "next": "15.5.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.62.0",
+    "zod": "^4.1.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

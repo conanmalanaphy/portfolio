@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
-import TypingAnimation from './typing-animation';
 import NavCard from './nav-card';
 import { Code, Palette, Camera } from 'lucide-react';
 
