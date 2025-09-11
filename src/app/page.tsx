@@ -6,6 +6,7 @@ import ParkBackground from '../components/park-background';
 import CyclingAnimation from '../components/cycling-animation';
 import ThemeToggleWrapper from '../components/theme-toggle-wrapper';
 import TypingAnimation from '../components/typing-animation';
+import RetroNavIcons from '../components/retro-nav-icons';
 
 /**
  * HomePage Component
@@ -85,6 +86,9 @@ export default function HomePage() {
         
         {/* Theme Toggle */}
         <ThemeToggleWrapper />
+        
+        {/* Retro Navigation Icons */}
+        <RetroNavIcons />
         
         {/* Main Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
